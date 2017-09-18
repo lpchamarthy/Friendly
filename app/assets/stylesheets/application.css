@@ -54,6 +54,7 @@
     position:relative;
     margin-top: -5rem;
     background-position: auto;
+    border:2px solid white;
     border-radius: 50%;
  }
  .profile_pic_feed{

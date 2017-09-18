@@ -1,6 +1,6 @@
 var Feed = React.createClass({
   render: function() {
-      var names = ['Jake', 'Jon', 'Thruster'];
+      var names = ['Jake', 'Jon', 'Thruster', 'Lakshmi', 'Mouni', 'Mohan', 'Sunny'];
       var namesList = names.map(function(name){
                       return (
                           <div>
