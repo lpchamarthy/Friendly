@@ -1,0 +1,16 @@
+<div>
+    <div class="row" id="wall">
+        <div class="col-sm-3 text-center">
+            <div id="avatar"><%= react_component("Avatar")%></div>
+            <div id="about"><%= react_component("About")%></div>
+        </div>
+        <div id="right-container" class="col-sm-9">
+          <div id="heading" class="page-header text-center">
+            <%= react_component("Heading", name: 'WALL') %>
+          </div>
+          <div id="feed">
+            <%= react_component("Feed")%>
+          </div>
+        </div>
+    </div>
+</div>

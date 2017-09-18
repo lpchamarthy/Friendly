@@ -7,13 +7,14 @@ class UsersController < ApplicationController
                      password: params['user']['password'], 
                      password_confirmation: params['user']['password_confirmation'])
     if user.save
-      redirect_to controller: "timeline", action: "timeline", id: user.id
+      redirect_to controller: "users", action: "show_data", id: user.id
     else
       # TODO: give proper views
       render html: user.errors.full_messages
     end
   end
-
-
-
+  # to view the data
+  def show_data
+    @email = params[ :email]
+  end
 end
